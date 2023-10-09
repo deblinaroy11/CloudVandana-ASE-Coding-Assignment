@@ -1,0 +1,123 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+    background-color:  #FFF5E0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: #322653; /* Dark gray color for the heading */
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.container h2:hover {
+    color: #1F4172; /* Change text color on hover */
+    transform: scale(1.05); /* Scale-up effect on hover */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Default label color */
+    transition: color 0.3s ease-in-out; /* Color transition effect on hover */
+}
+
+label:hover {
+    color: #1F4172; /* Change label text color on hover */
+    transform: scale(1.02);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #007BFF;
+}
+
+label.checkbox {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+    color: #555;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #141E46;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #1F4172;
+    transform: scale(1.05); /* Scale-up effect on hover */
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#popup h2 {
+    color: #1F4172;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#closePopupBtn {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#closePopupBtn:hover {
+    background-color: #999;
+    color: #fff;
+}
