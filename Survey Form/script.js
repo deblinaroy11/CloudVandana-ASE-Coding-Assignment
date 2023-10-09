@@ -1,4 +1,3 @@
-// script.js
 const form = document.getElementById('surveyForm');
 const popup = document.getElementById('popup');
 
@@ -7,7 +6,6 @@ const resetBtn = document.getElementById('resetBtn');
 const closePopupBtn = document.getElementById('closePopupBtn');
 
 submitBtn.addEventListener('click', () => {
-    // Validation logic here (you can add more specific validations)
     if (form.checkValidity()) {
         const formData = new FormData(form);
 

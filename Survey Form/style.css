@@ -1,6 +1,5 @@
-/* styles.css */
 body {
-    font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+    font-family: 'Arial', sans-serif; 
     background-color:  #FFF5E0;
     margin: 0;
     padding: 0;
@@ -18,27 +17,27 @@ body {
 
 .container h2 {
     text-align: center;
-    color: #322653; /* Dark gray color for the heading */
+    color: #322653;
     font-size: 24px;
     margin-bottom: 20px;
     transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .container h2:hover {
-    color: #1F4172; /* Change text color on hover */
-    transform: scale(1.05); /* Scale-up effect on hover */
+    color: #1F4172; 
+    transform: scale(1.05); 
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #333; /* Default label color */
-    transition: color 0.3s ease-in-out; /* Color transition effect on hover */
+    color: #333; 
+    transition: color 0.3s ease-in-out; 
 }
 
 label:hover {
-    color: #1F4172; /* Change label text color on hover */
+    color: #1F4172; 
     transform: scale(1.02);
 }
 
@@ -84,7 +83,7 @@ button {
 
 button:hover {
     background-color: #1F4172;
-    transform: scale(1.05); /* Scale-up effect on hover */
+    transform: scale(1.05); 
 }
 
 #popup {
