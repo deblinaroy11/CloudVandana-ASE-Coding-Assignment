@@ -14,6 +14,7 @@
           }
         }
 
+        
         var temp = arr[i];
         arr[i] = arr[maxIndex];
         arr[maxIndex] = temp;

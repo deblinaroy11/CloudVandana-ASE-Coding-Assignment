@@ -14,6 +14,7 @@ public class ShuffleArray
             int temp = array[i];
             array[i] = array[randomIndex];
             array[randomIndex] = temp;
+            
         }
     }
 

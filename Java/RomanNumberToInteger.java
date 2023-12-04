@@ -12,6 +12,7 @@ public class RomanNumberToInteger
         int result = romanToInt(romanNumeral);
         System.out.println("Integer equivalent: " + result);
         sc.close();
+        
     }
 
     public static int romanToInt(String s) 

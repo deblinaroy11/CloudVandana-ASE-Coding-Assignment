@@ -38,6 +38,7 @@ public class PangramChecker
             if (!isPresent)
              {
                 return false;
+                
             }
         }
         return true;

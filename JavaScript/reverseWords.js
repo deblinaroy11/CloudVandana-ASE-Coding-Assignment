@@ -2,7 +2,7 @@
 
     function reverseWords(sentence)
    {
-        var words = sentence.split(' ');
+         var words = sentence.split(' ');
         for (var i = 0; i < words.length; i++)
          {
               words[i] = reverseString(words[i]);
