@@ -1,25 +1,47 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-                                // Java Task-1
-public class ShuffleArray
+import java.util.Random;
+
+public class ShuffleArray 
 {
+
+    public static void shuffleArray(int[] array) 
+    {
+        Random rand = new Random();
+
+        for (int i = array.length - 1; i > 0; i--)
+         {
+            int randomIndex = rand.nextInt(i + 1);
+
+            int temp = array[i];
+            array[i] = array[randomIndex];
+            array[randomIndex] = temp;
+        }
+    }
+
     public static void main(String[] args) 
     {
-        Integer[] mainArray = {1, 2, 3, 4, 5, 6, 7};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
 
-        List<Integer> list = new ArrayList<>(Arrays.asList(mainArray));
-        Collections.shuffle(list);
-        Integer[] shuffledArray = list.toArray(new Integer[0]);
-        System.out.println("Shuffled Array: " + Arrays.toString(shuffledArray));
+        System.out.println("Original Array:");
+        printArray(arr);
 
+        shuffleArray(arr);
+
+        System.out.println("\nShuffled Array:");
+        printArray(arr);
+    }
+
+    public static void printArray(int[] array) {
+        for (int value : array) {
+            System.out.print(value + " ");
+        }
+        System.out.println();
+    }
+}
 
 
         // first, I am creating an Array with the values (1, 2, 3, 4, 5, 6, 7).
-        // then, convert this Array to a list for shuffling.
-        // convert the shuffled list back to an Array.
-        // Then, print the shuffled Array.
+        // then, I have created an fuction called shuffleArray which takes array as an input.
+        // In this function I have used logic for shuffle.
+        // Then, I also have created am function called printArray to print the shuffled Array.
 
-    }
-}
+
